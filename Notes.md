@@ -16,6 +16,6 @@ Apisix 是一个 Apache 旗下的开源 API 网关工具。
 
 #### 是否存在用户名和密码的环境变量？
 
-暂未调研
+存放在 config/dashboard_conf/conf.yaml 中
 
 
