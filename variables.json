@@ -2,8 +2,9 @@
   "name": "apisix",
   "trademark": "Apisix",
   "installpath": "/data/wwwroot/apisix",
-  "compose_file": "docker-compose-production.yml",
-  "env_file": ".env_all",
+  "compose_file": "docker-compose.yml",
+  "fork_url": "https://github.com/apache/apisix-docker",
+  "env_file": ".env",
   "requirements":{
     "cpu_arch": "Linux x86-64, ARM 32/64, IBM POWER8, x86/i686",
     "cpu": "2",
