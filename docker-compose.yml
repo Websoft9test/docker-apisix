@@ -8,8 +8,8 @@ services:
     container_name: ${APP_CONTAINER_NAME}
     restart: always
     volumes:
-      - ./config/apisix_log:/usr/local/apisix/logs
-      - ./config/apisix_conf/config.yaml:/usr/local/apisix/conf/config.yaml:ro
+      - ./src/config/apisix_log:/usr/local/apisix/logs
+      - ./src/config/apisix_conf/config.yaml:/usr/local/apisix/conf/config.yaml:ro
     depends_on:
       - etcd
     ports:
@@ -22,7 +22,7 @@ services:
     container_name: ${APP_CONTAINER_NAME}-dashboard
     restart: always
     volumes:
-      - ./config/dashboard_conf/conf.yaml:/usr/local/apisix-dashboard/conf/conf.yaml:ro
+      - ./src/config/dashboard_conf/conf.yaml:/usr/local/apisix-dashboard/conf/conf.yaml:ro
     depends_on:
       - etcd
     ports:
@@ -34,7 +34,7 @@ services:
     user: root
     restart: always
     volumes:
-      - ./config/etcd_data:/etcd_data
+      - ./src/config/etcd_data:/etcd_data
     environment:
       ETCD_DATA_DIR: /etcd_data
       ETCD_ENABLE_V2: "true"
