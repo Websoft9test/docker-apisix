@@ -1,6 +1,6 @@
 # Apisix
 
-Apisix 是一个 Apache 旗下的开源 API 网关工具。
+Apisix 是一个 Apache 旗下的开源 API 网关工具
 
 ## 安装
 
